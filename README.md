@@ -45,3 +45,4 @@ Utf8JsonReader.Read()
 JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
 
 ```
+This was created to provide support info for https://developercommunity.visualstudio.com/t/Live-Unit-Test-issue-with-CopyToOutputDi/10507598?
