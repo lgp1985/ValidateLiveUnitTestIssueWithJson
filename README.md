@@ -11,6 +11,7 @@ or [lut/ValidateLiveUnitTestIssueWithJson/v2/0/t/ValidateLiveUnitTestIssueWithJs
 all have the same problem, that its contents are same lenght but filled with 0x00 characters.
 
 This scenario used to work on __Live unit Test__ previously, but on _Microsoft Visual Studio Enterprise 2022 (64-bit) - Current_ Version 17.7.6, it's now failing with the problem above.
+This solution was hosted on a DEV Drive on Windows 11. And such was configured with `fsutil devdrv setfiltersallowed PrjFlt` before utilizing VS.
 
 <img width="703" alt="image" src="https://github.com/lgp1985/ValidateLiveUnitTestIssueWithJson/assets/810024/da947388-d575-4c13-bbab-e22b4027d65a">
 
