@@ -1,0 +1,12 @@
+15:20:49.791     1>Determining projects to restore...
+                     Restored D:\Users\lgp19\source\lut\ValidateLiveUnitTestIssueWithJson\v2\0\b\ValidateLiveUnitTestIssueWithJson\ValidateLiveUnitTestIssueWithJson.csproj (in 829 ms).
+D:\Users\lgp19\source\lut\ValidateLiveUnitTestIssueWithJson\v2\0\b\ValidateLiveUnitTestIssueWithJson\MyObj.cs(11,23): warning CS8618: O propriedade não anulável 'Data' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.
+15:20:52.227     2>ValidateLiveUnitTestIssueWithJson -> D:\Users\lgp19\source\lut\ValidateLiveUnitTestIssueWithJson\v2\0\b\ValidateLiveUnitTestIssueWithJson\bin\Debug\net6.0\ValidateLiveUnitTestIssueWithJson.dll
+
+Build succeeded.
+
+D:\Users\lgp19\source\lut\ValidateLiveUnitTestIssueWithJson\v2\0\b\ValidateLiveUnitTestIssueWithJson\MyObj.cs(11,23): warning CS8618: O propriedade não anulável 'Data' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.58
