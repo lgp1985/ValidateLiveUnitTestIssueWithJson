@@ -15,3 +15,32 @@ This scenario used to work on __Live unit Test__ previously, but on _Microsoft V
 <img width="703" alt="image" src="https://github.com/lgp1985/ValidateLiveUnitTestIssueWithJson/assets/810024/da947388-d575-4c13-bbab-e22b4027d65a">
 
 <img width="703" alt="image" src="https://github.com/lgp1985/ValidateLiveUnitTestIssueWithJson/assets/810024/e46a1c65-35a9-42cb-9596-ca01b2ad3f80">
+
+```
+ ValidateLiveUnitTestIssueWithJson.UnitTest1.Test1
+   Source: UnitTest1.cs line 6
+   Duration: 16 ms
+
+  Message: 
+System.Text.Json.JsonException : '0x00' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+---- System.Text.Json.JsonReaderException : '0x00' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+
+  Stack Trace: 
+ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+JsonSerializer.ReadAll[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo)
+JsonSerializer.ReadAllUsingOptions[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options)
+JsonSerializer.Deserialize[TValue](Stream utf8Json, JsonSerializerOptions options)
+UnitTest1.Test1() line 9
+----- Inner Stack Trace -----
+ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+Utf8JsonReader.ConsumeValue(Byte marker)
+Utf8JsonReader.ReadFirstToken(Byte first)
+Utf8JsonReader.ReadSingleSegment()
+Utf8JsonReader.Read()
+JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+
+```
